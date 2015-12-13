@@ -1,0 +1,20 @@
+@import "materialize/components/color";
+@import 'materialize';
+
+/* footer */
+footer {
+  a {
+    @extend .grey-text.text-lighten-3;
+    &:hover {
+      @extend .grey-text.text-lighten-1;
+    }
+  }
+}
+
+/* alerts */
+.card-panel {
+  &.success { @extend .teal.lighten-4;}
+  &.info { @extend .blue-grey.lighten-4;}
+  &.warning { @extend .yellow.lighten-4;}
+  &.danger { @extend .red.lighten-4;}
+}

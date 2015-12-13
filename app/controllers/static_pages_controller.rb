@@ -6,5 +6,9 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
+    flash[:success] = 'Success!'
+    flash[:info] = 'Info!'
+    flash[:warning] = 'Warning!'
+    flash[:danger] = 'Danger!'
   end
 end
