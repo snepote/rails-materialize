@@ -1,4 +1,5 @@
-# Rails Materializecss
+# Rails Materialize
+## _A Rails project template with materialize CSS_
 
 [![Build Status](https://travis-ci.org/snepote/rails-materialize.svg?branch=master)](https://travis-ci.org/snepote/rails-materialize)
 
