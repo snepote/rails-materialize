@@ -20,12 +20,21 @@ RSpec.describe StaticPagesController, type: :controller do
     end
   end
 
-  describe "GET #contact" do
+  describe "GET #alerts" do
     it "responds successfully with an HTTP 200 status code and renders contact template" do
-      get :contact
+      get :alerts
       expect(response).to have_http_status(200)
       expect(response).to be_success
-      expect(response).to render_template("contact")
+      expect(response).to render_template("alerts")
+    end
+  end
+
+  describe "GET #parallax" do
+    it "responds successfully with an HTTP 200 status code and renders contact template" do
+      get :parallax
+      expect(response).to have_http_status(200)
+      expect(response).to be_success
+      expect(response).to render_template("parallax")
     end
   end
 

@@ -1,17 +1,18 @@
-    <header class="navbar navbar-fixed-top navbar-inverse">
-        <nav>
-          <div class="nav-wrapper">
-            <%= link_to 'logo', root_path, class: 'brand-logo' %>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><%= link_to 'About',    about_path %></li>
-              <li><%= link_to 'Contact',  contact_path %></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-              <li><%= link_to 'Home',    root_path %></li>
-              <li><%= link_to 'About',    about_path %></li>
-              <li><%= link_to 'Contact',  contact_path %></li>
-            </ul>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          </div>
-        </nav>
-    </header>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <%= link_to 'logo', root_path, class: 'brand-logo' %>
+        <ul class="right hide-on-med-and-down">
+          <li><%= link_to 'Home',    root_path %></li>
+          <li><%= link_to 'Alerts',  alerts_path %></li>
+          <li><%= link_to 'Parallaxx',  parallax_path %></li>
+          <li><%= link_to 'About',    about_path %></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><%= link_to 'Home',    root_path %></li>
+          <li><%= link_to 'Alerts',  alerts_path %></li>
+          <li><%= link_to 'Parallaxx',  parallax_path %></li>
+          <li><%= link_to 'About',    about_path %></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
