@@ -1,4 +1,8 @@
-== README
+# Rails Materializecss
+
+[![Build Status](https://travis-ci.org/snepote/rails-materialize.svg?branch=master)](https://travis-ci.org/snepote/rails-materialize)
+
+== INCOMPLETE
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
