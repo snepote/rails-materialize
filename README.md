@@ -1,5 +1,7 @@
 # Rails Materialize
-## _A Rails project template with materialize CSS_
+### _A project template for [Material Design](https://www.google.com/design/spec/material-design/introduction.html "Material Design introduction") with Rails using [Materialize CSS](http://materializecss.com/)_
+
+You can see how it looks like at [rails-materialize.herokuapp.com](https://rails-materialize.herokuapp.com/ "Rails Materializecss at Heroku")
 
 [![Build Status](https://travis-ci.org/snepote/rails-materialize.svg?branch=master)](https://travis-ci.org/snepote/rails-materialize)
 
