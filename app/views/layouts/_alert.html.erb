@@ -1,3 +1,5 @@
-<% flash.each do |message_types, message| %>
-  <div class="card-panel <%= message_types %> hoverable dismissable"><%= message %></div>
-<% end %>
+<div class="container">
+  <% flash.each do |message_types, message| %>
+    <div class="card-panel <%= message_types %> hoverable dismissable"><%= message %></div>
+  <% end %>
+</div>

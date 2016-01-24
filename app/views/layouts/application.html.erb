@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= full_title(yield(:title)) %></title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= render 'layouts/shim' %>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= render 'layouts/shim' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
 <%= render 'layouts/header' %>
-    <div class="container">
-      <%= render 'layouts/alert' %>
-      <%= yield %>
-      <%= render 'layouts/debug' if Rails.env.development? %>
-    </div>
+    <%= render 'layouts/alert' %>
+    <%= yield %>
+    <%= render 'layouts/debug' if Rails.env.development? %>
 <%= render 'layouts/footer' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  </body>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>
 </html>
