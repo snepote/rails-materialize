@@ -2,7 +2,6 @@ language: ruby
 rvm:
   - 2.2.3
 
-# Acceptance tests
 script: bundle exec rspec spec
 
 notifications:
