@@ -5,14 +5,14 @@ You can see how it looks like at [rails-materialize.herokuapp.com](https://rails
 
 [![Build Status](https://travis-ci.org/snepote/rails-materialize.svg?branch=master)](https://travis-ci.org/snepote/rails-materialize)
 
+* Ruby version: 2.2.3
+
 == INCOMPLETE
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
-
-* Ruby version
 
 * System dependencies
 
