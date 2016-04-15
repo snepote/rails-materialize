@@ -3,9 +3,14 @@
 
 You can see how it looks like at [rails-materialize.herokuapp.com](https://rails-materialize.herokuapp.com/ "Rails Materializecss at Heroku")
 
-[![Build Status](https://travis-ci.org/snepote/rails-materialize.svg?branch=master)](https://travis-ci.org/snepote/rails-materialize)
+TravisCI [![Build Status](https://travis-ci.org/snepote/rails-materialize.svg?branch=master)](https://travis-ci.org/snepote/rails-materialize)
+Codeship [ ![Codeship Status for snepote/rails-materialize](https://codeship.com/projects/2b44e070-e537-0133-09aa-6a2823a81008/status?branch=master)](https://codeship.com/projects/146549)
 
 * Ruby version: 2.2.3
+
+= Deployment instructions
+
+<tt>Push to master and let continuous deployment do its job</tt>.
 
 == INCOMPLETE
 
@@ -30,6 +35,4 @@ Things you may want to cover:
 
 = Services (job queues, cache servers, search engines, etc.)
 
-= Deployment instructions
 
-<tt>rake doc:app</tt>.
