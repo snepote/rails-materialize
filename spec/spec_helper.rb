@@ -17,6 +17,11 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  # Percy screenshot configuration
+  # See: https://percy.io/docs/capybara
+  config.before(:suite) { Percy::Capybara.initialize_build }
+  config.after(:suite) { Percy::Capybara.finalize_build }
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
