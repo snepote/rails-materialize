@@ -5,7 +5,7 @@ ruby '2.2.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails',                  '4.2.6'
 gem 'sass-rails',             '~> 5.0'
-gem 'uglifier',               '~> 2.7'
+gem 'uglifier',               '~> 3.0'
 gem 'coffee-rails',           '~> 4.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
