@@ -16,3 +16,6 @@
 # RubyMine files
 .idea/
 
+# Coverall code coverage report folder
+coverage
+

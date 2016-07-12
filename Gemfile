@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.2.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails',                  '4.2.6'
@@ -29,6 +29,8 @@ group :development, :test do
   gem 'percy-capybara',       '2.0.1'
   gem 'selenium-webdriver',   '2.53.0'
   gem 'byebug' # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem "codeclimate-test-reporter", group: :test, require: nil
+  gem 'coveralls', require: false
 end
 
 group :development do
@@ -36,8 +38,6 @@ group :development do
   gem 'web-console'
   gem 'better_errors',        '~> 2.0.0'
 end
-
-gem "codeclimate-test-reporter", group: :test, require: nil
 
 group :production do
   gem 'pg',                   '~> 0.17'
