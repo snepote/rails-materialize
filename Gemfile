@@ -30,7 +30,7 @@ group :development, :test do
   gem 'selenium-webdriver',   '2.53.0'
   gem 'byebug' # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "codeclimate-test-reporter", group: :test, require: nil
-  gem 'coveralls', require: false
+  gem 'coveralls',            '~> 0.8.14', require: false
 end
 
 group :development do
