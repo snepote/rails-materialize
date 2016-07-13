@@ -1,10 +1,12 @@
-if ENV['CODECLIMATE']
-  require "codeclimate-test-reporter"
-  CodeClimate::TestReporter.start
-end
-if ENV['COVERALLS']
-  require 'coveralls'
-  Coveralls.wear!
+if ENV['RAILS_ENV'] == 'test'
+  if ENV['CODECLIMATE']
+    require "codeclimate-test-reporter"
+    CodeClimate::TestReporter.start
+  end
+  if ENV['COVERALLS']
+    require 'coveralls'
+    Coveralls.wear!
+  end
 end
 require 'capybara/rspec'
 
