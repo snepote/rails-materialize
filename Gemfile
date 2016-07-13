@@ -29,14 +29,17 @@ group :development, :test do
   gem 'percy-capybara',       '2.0.1'
   gem 'selenium-webdriver',   '2.53.0'
   gem 'byebug' # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem "codeclimate-test-reporter", group: :test, require: nil
-  gem 'coveralls',            '~> 0.8.14', require: false
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console'
   gem 'better_errors',        '~> 2.0.0'
+end
+
+group :test do
+  gem "codeclimate-test-reporter", group: :test, require: nil
+  gem 'coveralls',            '~> 0.8.14', require: false
 end
 
 group :production do
