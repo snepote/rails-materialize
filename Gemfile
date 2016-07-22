@@ -40,6 +40,7 @@ end
 group :test do
   gem "codeclimate-test-reporter", group: :test, require: nil
   gem 'coveralls',            '~> 0.8.14', require: false
+  gem 'codecov', :require => false, :group => :test
 end
 
 group :production do

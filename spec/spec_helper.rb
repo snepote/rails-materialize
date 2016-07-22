@@ -7,6 +7,13 @@ if ENV['RAILS_ENV'] == 'test'
     require "codeclimate-test-reporter"
     CodeClimate::TestReporter.start
   end
+  if ENV['CODECOV_IO']
+    require 'simplecov'
+    SimpleCov.start
+
+    require 'codecov'
+    SimpleCov.formatter = SimpleCov::Formatter::Codecov
+  end
 end
 require 'capybara/rspec'
 
