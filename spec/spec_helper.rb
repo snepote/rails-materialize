@@ -9,10 +9,10 @@ if ENV['RAILS_ENV'] == 'test'
   end
   if ENV['CODECOV_IO']
     require 'simplecov'
-    SimpleCov.start
-
     require 'codecov'
     SimpleCov.formatter = SimpleCov::Formatter::Codecov
+    SimpleCov.track_files 'app/**/*.rb'
+    SimpleCov.start 'rails'
   end
 end
 require 'capybara/rspec'
