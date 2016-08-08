@@ -13,6 +13,10 @@ if ENV['RAILS_ENV'] == 'test'
     SimpleCov.formatter = SimpleCov::Formatter::Codecov
     SimpleCov.start
   end
+  if ENV['CODACY']
+    require 'codacy-coverage'
+    Codacy::Reporter.start
+  end
 end
 require 'capybara/rspec'
 
