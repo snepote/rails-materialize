@@ -18,3 +18,8 @@ script:
 
 notifications:
   email: "snepote@gmail.com"
+
+# safelist
+branches:
+  only:
+  - master
