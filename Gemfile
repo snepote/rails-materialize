@@ -12,7 +12,7 @@ gem 'therubyracer', platforms: :ruby
 
 # Materialize for Rails asset pipeline
 gem 'materialize-sass'
-gem 'jquery-rails',           '~> 4.1'
+gem 'jquery-rails',           '~> 4.2'
 gem 'turbolinks',             '~> 2.5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder',               '~> 2.0'
