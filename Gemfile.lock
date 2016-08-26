@@ -239,7 +239,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1)
   coveralls (~> 0.8.14)
   jbuilder (~> 2.0)
-  jquery-rails (~> 4.1)
+  jquery-rails (~> 4.2)
   materialize-sass
   percy-capybara (= 2.0.1)
   pg (~> 0.17)
