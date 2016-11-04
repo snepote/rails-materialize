@@ -18,6 +18,8 @@ gem 'turbolinks',             '~> 2.5'
 gem 'jbuilder',               '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc',                   '~> 0.4', group: :doc
+# Database
+gem 'sqlite3',              '~> 1.3'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -44,7 +46,6 @@ group :test do
 end
 
 group :production do
-  gem 'sqlite3',              '~> 1.3'
   gem 'rails_12factor',       '~> 0.0'
   gem 'puma',                 '~> 2.11'
 end
