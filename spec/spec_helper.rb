@@ -11,13 +11,7 @@ if ENV['RAILS_ENV'] == 'test'
     require 'simplecov'
     require 'codecov'
     SimpleCov.start 'rails' do
-      add_filter '/spec/'
-      add_filter '/config/'
-      SimpleCov.formatters = [
-        SimpleCov::Formatter::HTMLFormatter,
-        SimpleCov::Formatter::Codecov
-      ]
-      add_group 'Mailers', 'app/mailers'
+      SimpleCov.formatter = SimpleCov::Formatter::Codecov
   end
   end
   if ENV['CODACY']
