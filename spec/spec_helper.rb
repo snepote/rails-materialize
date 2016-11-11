@@ -17,8 +17,7 @@ if ENV['RAILS_ENV'] == 'test'
         SimpleCov::Formatter::HTMLFormatter,
         SimpleCov::Formatter::Codecov
       ]
-      # add_group 'Models', 'app/models'
-      # add_group 'Controllers', 'app/controllers'
+      add_group 'Mailers', 'app/mailers'
   end
   end
   if ENV['CODACY']
