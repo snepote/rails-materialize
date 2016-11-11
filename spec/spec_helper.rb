@@ -12,7 +12,7 @@ if ENV['RAILS_ENV'] == 'test'
     require 'codecov'
     SimpleCov.start 'rails' do
       SimpleCov.formatter = SimpleCov::Formatter::Codecov
-  end
+    end
   end
   if ENV['CODACY']
     require 'codacy-coverage'
