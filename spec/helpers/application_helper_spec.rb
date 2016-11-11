@@ -2,11 +2,13 @@ require 'rails_helper'
 
 RSpec.describe ApplicationHelper do
   subject { Object.new.extend(ApplicationHelper) }
+  let(:base_title) { 'Rails material design with Materialize' }
   it 'returns a sample title with the website base title' do
-    expect(subject.full_title('sample title')).to eq 'sample title | Rails material design with Materialize'
+    title = "sample title | #{base_title}"
+    expect(subject.full_title('sample title')).to eq title
   end
 
   it 'returns the website base title only' do
-    expect(subject.full_title).to eq 'Rails material design with Materialize'
+    expect(subject.full_title).to eq base_title
   end
 end
