@@ -4,23 +4,20 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-default: &default
-  adapter: sqlite3
+development: &default
+  adapter: postgresql
+  database: rails_materialize_development
+  min_messages: WARNING
   pool: 5
-  timeout: 5000
+  username: postgres
+  password: password
+  host: db
 
-development:
-  <<: *default
-  database: db/development.sqlite3
-
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.sqlite3
-
-production:
-  adapter: postgresql
-  url: <%= ENV["POSTGRESQL_URL"] ||  ENV['DATABASE_URL'] || '' %>
-  pool: 15
+  database: rails_materialize_test
+#
+# production:
+#   adapter: postgresql
+#   url: <%= ENV["POSTGRESQL_URL"] ||  ENV['DATABASE_URL'] || '' %>
+#   pool: 15
