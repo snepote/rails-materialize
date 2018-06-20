@@ -67,11 +67,11 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  # ChromeDriver
+    # ChromeDriver
     Capybara.register_driver :selenium do |app|
       caps = Selenium::WebDriver::Remote::Capabilities.chrome(
         chromeOptions: {
-          args: %w[no-sandbox headless disable-gpu],
+          args: %w[no-sandbox headless disable-gpu]
         }
       )
       Capybara::Selenium::Driver.new(app, browser: :chrome, desired_capabilities: caps)
