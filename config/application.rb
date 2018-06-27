@@ -23,5 +23,7 @@ module Untitled
     # Do not swallow errors in after_commit/after_rollback callbacks.
     # old config from rails 4.2. Not longer working in 5.2
     # config.active_record.raise_in_transactional_callbacks = true
+
+    Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
   end
 end
