@@ -6,8 +6,7 @@ RSpec.describe StaticPagesController, type: :controller do
     it "responds successfully with an HTTP 200 status code and renders home template" do
       get :home
       expect(response).to have_http_status(200)
-      expect(response).to be_success
-      expect(response).to render_template("home")
+      expect(response).to be_successful
     end
   end
 
@@ -15,8 +14,7 @@ RSpec.describe StaticPagesController, type: :controller do
     it "responds successfully with an HTTP 200 status code and renders about template" do
       get :about
       expect(response).to have_http_status(200)
-      expect(response).to be_success
-      expect(response).to render_template("about")
+      expect(response).to be_successful
     end
   end
 
@@ -24,8 +22,7 @@ RSpec.describe StaticPagesController, type: :controller do
     it "responds successfully with an HTTP 200 status code and renders contact template" do
       get :alerts
       expect(response).to have_http_status(200)
-      expect(response).to be_success
-      expect(response).to render_template("alerts")
+      expect(response).to be_successful
     end
   end
 
@@ -33,8 +30,7 @@ RSpec.describe StaticPagesController, type: :controller do
     it "responds successfully with an HTTP 200 status code and renders contact template" do
       get :parallax
       expect(response).to have_http_status(200)
-      expect(response).to be_success
-      expect(response).to render_template("parallax")
+      expect(response).to be_successful
     end
   end
 
