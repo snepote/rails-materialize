@@ -21,6 +21,7 @@ module Untitled
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
+    # old config from rails 4.2. Not longer working in 5.2
+    # config.active_record.raise_in_transactional_callbacks = true
   end
 end
