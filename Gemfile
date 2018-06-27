@@ -31,7 +31,6 @@ group :development, :test do
   gem 'byebug',               platforms: %i[mri mingw x64_mingw]
   gem 'capybara',             '>= 2.15', '< 4.0'
   gem 'chromedriver-helper'
-  gem 'percy-capybara',       '~> 3.1', '>= 3.1.2'
   gem 'rspec-rails',          '~> 3.7', '>= 3.7.2'
   gem 'selenium-webdriver'
   gem 'sqlite3'

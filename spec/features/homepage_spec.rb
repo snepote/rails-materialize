@@ -12,7 +12,6 @@ feature 'As a user I go to homepage' do
     it 'shows the home text' do
       visit '/'
       expect(page).to have_content('Home')
-      Percy::Capybara.snapshot(page, name: 'homepage')
     end
   end
 end
