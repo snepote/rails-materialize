@@ -3,10 +3,6 @@ if ENV['RAILS_ENV'] == 'test'
     require 'coveralls'
     Coveralls.wear!('rails')
   end
-  if ENV['CODECLIMATE']
-    require "codeclimate-test-reporter"
-    CodeClimate::TestReporter.start
-  end
   if ENV['CODECOV_IO']
     require 'simplecov'
     require 'codecov'
