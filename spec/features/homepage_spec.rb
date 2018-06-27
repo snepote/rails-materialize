@@ -8,7 +8,7 @@ require 'rails_helper'
 # end
 
 feature 'As a user I go to homepage' do
-  describe 'logo', type: :feature, js: true do
+  describe 'logo', type: :system do
     it 'shows the home text' do
       visit '/'
       expect(page).to have_content('Home')
