@@ -1,7 +1,9 @@
+dist: trusty
 sudo: required
+
 addons:
   chrome: stable
-  
+
 language: ruby
 cache: bundler
 rvm:
@@ -10,6 +12,8 @@ rvm:
 bundler_args: --without production
 
 before_install:
+  - # start your web application and listen on `localhost`
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
 
 before_script:
