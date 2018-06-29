@@ -1,51 +1,48 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.2.6'
+ruby '2.3.6'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails',                  '4.2.7.1'
-gem 'sass-rails',             '~> 5.0'
-gem 'uglifier',               '~> 3.0'
-gem 'coffee-rails',           '~> 4.1'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
-
-# Materialize for Rails asset pipeline
-gem 'materialize-sass'
+gem 'bootsnap',               '>= 1.1.0', require: false
+gem 'coffee-rails',           '~> 4.2'
+gem 'jbuilder',               '~> 2.5'
 gem 'jquery-rails',           '~> 4.2'
-gem 'turbolinks',             '~> 2.5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder',               '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc',                   '~> 0.4', group: :doc
+gem 'materialize-sass'
+gem 'puma',                   '~> 3.11'
+gem 'rails',                  '~> 5.2.0'
+gem 'sass-rails',             '~> 5.0'
+gem 'therubyracer',           platforms: :ruby
+gem 'turbolinks',             '~> 5'
+gem 'uglifier',               '>= 1.3.0'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-group :development, :test do
-  gem 'rspec-rails',          '~> 3.4'
-  gem 'sqlite3',              '~> 1.3'
-  gem 'capybara',             '~> 2.7'
-  gem 'percy-capybara',       '2.0.1'
-  gem 'selenium-webdriver',   '2.53.0'
-  gem 'byebug' # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-end
-
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console'
-  gem 'better_errors',        '~> 2.0.0'
+group :production do
+  gem 'pg',                   '~> 1.0'
+  gem 'rails_12factor',       '~> 0.0.3'
 end
 
 group :test do
-  gem 'codeclimate-test-reporter',  '~> 0.6.0',   require: nil
-  gem 'coveralls',                  '~> 0.8.14',  require: false
-  gem 'codecov',                    '~> 0.1.5',   require: false
-  gem 'codacy-coverage',            '~> 1.0.0',   require: false
+  gem 'codeclimate-test-reporter',  require: nil
+  gem 'coveralls',                  '~> 0.8.21',  require: false
+  gem 'codecov',                    '~> 0.1.10',   require: false
+  gem 'codacy-coverage',             require: false
 end
 
-group :production do
-  gem 'pg',                   '~> 0.17'
-  gem 'rails_12factor',       '~> 0.0'
-  gem 'puma',                 '~> 2.11'
+group :development, :test do
+  gem 'byebug',               platforms: %i[mri mingw x64_mingw]
+  gem 'capybara',             '>= 2.15', '< 4.0'
+  gem 'chromedriver-helper'
+  gem 'rspec-rails',          '~> 3.7', '>= 3.7.2'
+  gem 'selenium-webdriver'
+  gem 'sqlite3'
 end
+
+group :development do
+  gem 'better_errors', '~> 2.4'
+  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'web-console', '>= 3.3.0'
+end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

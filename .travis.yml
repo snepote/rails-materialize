@@ -1,17 +1,18 @@
+dist: trusty
+sudo: required
+
+addons:
+  chrome: stable
+
 language: ruby
 cache: bundler
 rvm:
-  - 2.2.6
+  - 2.3.6
 
 bundler_args: --without production
 
 before_install:
-  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
-
-before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3 # give xvfb some time to start
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 
 script:
   - bin/bundle exec rspec spec
