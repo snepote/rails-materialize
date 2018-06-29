@@ -9,4 +9,4 @@
 
 You can see how it looks like at [rails-materialize.nepoteidea.com](https://rails-materialize.nepoteidea.com/ "Ruby on Rails with Materializecss at Heroku")
 
-* Ruby version: 2.2.6
+* Ruby version: 2.3.6
