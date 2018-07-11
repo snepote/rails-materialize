@@ -17,7 +17,6 @@ gem 'uglifier',               '>= 1.3.0'
 
 group :production do
   gem 'pg',                   '~> 1.0'
-  gem 'rails_12factor',       '~> 0.0.3'
 end
 
 group :test do
