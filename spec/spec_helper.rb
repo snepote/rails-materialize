@@ -1,15 +1,4 @@
 if ENV['RAILS_ENV'] == 'test'
-  if ENV['COVERALLS']
-    require 'coveralls'
-    Coveralls.wear!('rails')
-  end
-  if ENV['CODECOV_IO']
-    require 'simplecov'
-    require 'codecov'
-    SimpleCov.start 'rails' do
-      SimpleCov.formatter = SimpleCov::Formatter::Codecov
-    end
-  end
   if ENV['CODACY']
     require 'codacy-coverage'
     Codacy::Reporter.start
