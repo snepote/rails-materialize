@@ -1,15 +1,4 @@
 if ENV['RAILS_ENV'] == 'test'
-  if ENV['COVERALLS']
-    require 'coveralls'
-    Coveralls.wear!('rails')
-  end
-  if ENV['CODECOV_IO']
-    require 'simplecov'
-    require 'codecov'
-    SimpleCov.start 'rails' do
-      SimpleCov.formatter = SimpleCov::Formatter::Codecov
-    end
-  end
   if ENV['CODACY']
     require 'codacy-coverage'
     Codacy::Reporter.start
@@ -61,8 +50,8 @@ RSpec.configure do |config|
 
   if ENV['RAILS_ENV'] == 'test'
     Capybara.register_driver :headless_chrome do |app|
-    	options = Selenium::WebDriver::Chrome::Options.new(args: %w[no-sandbox headless disable-gpu])
-    	Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
+      options = Selenium::WebDriver::Chrome::Options.new(args: %w[no-sandbox headless disable-gpu])
+      Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
     end
 
     Capybara.javascript_driver = :headless_chrome

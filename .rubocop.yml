@@ -32,8 +32,9 @@ Naming/FileName:
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#snake-case-files
   Enabled: false
   Exclude: []
-Naming/MemoizedInstanceVariableName:
-  Enabled: false
+# Uncomment on Rubocop 0.58.2
+# Naming/MemoizedInstanceVariableName:
+#  Enabled: false
 Naming/MethodName:
   Description: Use the configured style when naming methods.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#snake-case-symbols-methods-vars
@@ -300,12 +301,13 @@ Style/SymbolProc:
   Enabled: true
   IgnoredMethods:
   - respond_to
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: comma
-  Enabled: true
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: comma
-  Enabled: true
+# Uncomment on Rubocop 0.58.2
+# Style/TrailingCommaInArrayLiteral:
+#   EnforcedStyleForMultiline: comma
+#   Enabled: true
+# Style/TrailingCommaInHashLiteral:
+#   EnforcedStyleForMultiline: comma
+#   Enabled: true
 Style/TrailingCommaInArguments:
   Description: Checks for trailing comma in parameter lists and literals.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas
@@ -369,7 +371,7 @@ Metrics/CyclomaticComplexity:
   Enabled: true
   Max: 6
 Metrics/LineLength:
-  Description: Limit lines to 80 characters.
+  Description: Limit lines to 120 characters.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#80-character-limits
   Enabled: true
   Max: 120
@@ -401,14 +403,14 @@ Lint/AssignmentInCondition:
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#safe-assignment-in-condition
   Enabled: false
   AllowSafeAssignment: true
-Layout/EndAlignment:
+Lint/EndAlignment:
   Description: Align ends correctly.
   Enabled: true
   EnforcedStyleAlignWith: keyword
   SupportedStylesAlignWith:
   - keyword
   - variable
-Layout/DefEndAlignment:
+Lint/DefEndAlignment:
   Description: Align ends corresponding to defs correctly.
   Enabled: true
   EnforcedStyleAlignWith: start_of_line
@@ -924,10 +926,11 @@ Layout/SpaceAroundOperators:
 Layout/SpaceAroundKeyword:
   Description: Put a space before the modifier keyword.
   Enabled: true
-Layout/SpaceInsideBrackets:
-  Description: No spaces after [ or before ].
-  StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-spaces-braces
-  Enabled: true
+# Uncomment on Rubocop 0.58.2
+# Layout/SpaceInsideBrackets:
+#   Description: No spaces after [ or before ].
+#   StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-spaces-braces
+#   Enabled: true
 Layout/SpaceInsideParens:
   Description: No spaces after ( or before ).
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-spaces-braces
@@ -953,10 +956,10 @@ Lint/AmbiguousRegexpLiteral:
   Description: Checks for ambiguous regexp literals in the first argument of a method
     invocation without parenthesis.
   Enabled: false
-Layout/BlockAlignment:
+Lint/BlockAlignment:
   Description: Align block ends correctly.
   Enabled: true
-Layout/ConditionPosition:
+Lint/ConditionPosition:
   Description: Checks for condition placed in a confusing position relative to the
     keyword.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#same-line-condition
@@ -990,9 +993,10 @@ Lint/HandleExceptions:
   Description: Don't suppress exception.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#dont-hide-exceptions
   Enabled: false
-Lint/LiteralInCondition:
-  Description: Checks of literals used in conditions.
-  Enabled: false
+# Uncomment on Rubocop 0.58.2
+# Lint/LiteralInCondition:
+#   Description: Checks of literals used in conditions.
+#   Enabled: false
 Lint/LiteralInInterpolation:
   Description: Checks for literals used in interpolation.
   Enabled: false

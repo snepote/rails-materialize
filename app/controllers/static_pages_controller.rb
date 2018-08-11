@@ -1,6 +1,5 @@
 class StaticPagesController < ApplicationController
-  def home
-  end
+  def home; end
 
   def alerts
     flash[:success] = 'Success!'
@@ -9,10 +8,7 @@ class StaticPagesController < ApplicationController
     flash[:danger] = 'Danger!'
   end
 
-  def parallax
-  end
+  def parallax; end
 
-  def about
-  end
-
+  def about; end
 end
