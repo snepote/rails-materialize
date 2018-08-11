@@ -27,21 +27,22 @@ group :test do
 end
 
 group :development, :test do
-  gem 'byebug',               platforms: %i[mri mingw x64_mingw]
-  gem 'capybara',             '>= 2.15', '< 4.0'
+  gem 'byebug',                 platforms: %i[mri mingw x64_mingw]
+  gem 'capybara',               '>= 2.15', '< 4.0'
   gem 'chromedriver-helper'
-  gem 'rspec-rails',          '~> 3.7', '>= 3.7.2'
-  gem 'rubocop',              '~> 0.58.2'
+  gem 'mutant',                 '~> 0.8.10'
+  gem 'rspec-rails',            '~> 3.7', '>= 3.7.2'
+  gem 'rubocop',                '~> 0.51'
   gem 'selenium-webdriver'
   gem 'sqlite3'
 end
 
 group :development do
-  gem 'better_errors', '~> 2.4'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'better_errors',          '~> 2.4'
+  gem 'listen',                 '>= 3.0.5', '< 3.2'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'web-console', '>= 3.3.0'
+  gem 'spring-watcher-listen',  '~> 2.0.0'
+  gem 'web-console',            '>= 3.3.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
