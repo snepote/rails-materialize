@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { "https://github.com/#{repo}.git" }
 
-ruby '2.3.6'
+ruby '2.3.7'
 
 gem 'bootsnap',               '>= 1.1.0', require: false
 gem 'coffee-rails',           '~> 4.2'
@@ -11,6 +11,7 @@ gem 'materialize-sass'
 gem 'puma',                   '~> 3.11'
 gem 'rails',                  '~> 5.2.0'
 gem 'sass-rails',             '~> 5.0'
+gem 'skylight',               '~> 3.0'
 gem 'therubyracer',           platforms: :ruby
 gem 'turbolinks',             '~> 5'
 gem 'uglifier',               '>= 1.3.0'

@@ -263,6 +263,10 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
+    skylight (3.0.0)
+      skylight-core (= 3.0.0)
+    skylight-core (3.0.0)
+      activesupport (>= 4.2.0)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -339,6 +343,7 @@ DEPENDENCIES
   rubocop (~> 0.51)
   sass-rails (~> 5.0)
   selenium-webdriver
+  skylight (~> 3.0)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
@@ -349,7 +354,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.3.6p384
+   ruby 2.3.7p456
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
