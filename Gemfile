@@ -28,7 +28,7 @@ group :test do
 end
 
 group :development, :test do
-  gem 'byebug',                 platforms: %i[mri mingw x64_mingw]
+  gem 'byebug',                 '~> 10.0', '>= 10.0.2'
   gem 'capybara',               '>= 2.15', '< 4.0'
   gem 'chromedriver-helper'
   gem 'mutant',                 '~> 0.8.10'
